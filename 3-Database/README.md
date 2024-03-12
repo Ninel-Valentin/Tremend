@@ -7,26 +7,24 @@
 Open a terminal and follow the instructions:
 
 ### Navigate to the directory you want to store the app
-```cd AppDir```
+```cd MySqlDir```
 
 - If there is no such directory you can use the following cmd to create one:
-```mkdir AppDir```
+```mkdir MySqlDir```
 
 ### Clone the GitHub repository
 ```git clone https://github.com/Ninel-Valentin/Tremend.git```
 
 ### Navigate to the directory where the Dockerfile is located
-```cd Tremend/1-Linux```
+```cd Tremend/3-Database```
 
 ### Build the Docker image 
-```docker build -t linux_app . ```
+```docker build -t my-sql-app . ```
 
 # How to run
 
 ### Run the Docker container (replace 'container_name' with your desired container name)
-```docker run -ti --rm linux_app /bin/bash```
-
-## Output will now be visible in the terminal
+```docker run -ti --rm my-sql-app /bin/bash```
 
 # Development 
 

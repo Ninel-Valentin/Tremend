@@ -15,4 +15,4 @@ RUN sh create_large_file.sh
 
 # Copy the passwd_check bash script to the image and run it 
 COPY passwd_check.sh .
-
+ENTRYPOINT ["/passwd_check.sh"]
