@@ -1,0 +1,5 @@
+README la toate 3
+1- 
+    -Add in the README issues encountered:
+        - create_large_file had a typo at the moving command (lage_file instead of large_file)
+        - very hard to understand what was requested in the test
