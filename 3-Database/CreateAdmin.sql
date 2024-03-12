@@ -1,3 +1,5 @@
+USE CompanyDB;
+
 CREATE USER 'Admin'@'%' 
     IDENTIFIED BY 'AdminPass123';
 GRANT ALL PRIVILEGES 

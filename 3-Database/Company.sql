@@ -50,7 +50,7 @@ INSERT INTO employees (first_name, last_name, position, department, salary) VALU
 ('Carter', 'Rogers', 5, 2, 80000.00),
 ('Aubrey', 'Gray', 6, 5, 53000.00),
 ('Joshua', 'Cook', 1, 6, 68000.00),
-('Hannah', 'Murphy', 7, 'Consulting', 86000.00),
+('Hannah', 'Murphy', 7, 7, 86000.00),
 ('Hunter', 'James', 8, 6, 61000.00),
 ('Anna', 'Reed', 9, 3, 51000.00),
 ('Isaac', 'Bailey', 10, 8, 60000.00),

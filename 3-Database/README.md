@@ -19,16 +19,25 @@ Open a terminal and follow the instructions:
 ```cd Tremend/3-Database```
 
 ### Build the Docker image 
-```docker build -t my-sql-app . ```
+```docker build -t my-sql-img . ```
 
 # How to run
 
-### Run the Docker container (replace 'container_name' with your desired container name)
-```docker run -ti --rm my-sql-app /bin/bash```
+### Run the Docker container 
+```docker run -d --name my-sql-img -e MYSQL_ROOT_PASSWORD=password123 -e MYSQL_DATABASE=CompanyDB -v mysql_data:/var/lib/mysql -p 3306:3306 my-sql-img:latest```
+
+### Open a bash instance
+```docker exec -it my-sql-img bash```
+
+### Start SQL mode 
+```mysql -u root -p```
+- Enter the password of the database
+
+
 
 # Development 
 
 ### Issues encountered during development
 
-- create_large_file had a typo at the moving command (lage_file instead of large_file)
-- a bit hard to understand what was requested in the test
+- There was a bug in the Company.sql script where the 40th user had the integer value of department a string "Company"
+  - Replaced it with the appropriate index of the department (7)
